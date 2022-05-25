@@ -1,3 +1,10 @@
+#
+# A powershell script for automatically looping over all perforce helix stream depots and 
+# calling 'p4 sync' on each one to sync the latest files to the local workspace. 
+# If a new stream depot is detected, the script also creates a new workspace and 
+# local directory for the stream depot to get synced to.
+#
+
 # Root directory for all of the workspaces on the TEC-FXP machine
 $root_dir = "E:\Perforce"
 
